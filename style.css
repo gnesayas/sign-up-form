@@ -91,7 +91,8 @@ fieldset {
 }
 
 .form-row input {
-    border: 1px solid #D6D9DC;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
     padding: 3px;
     font-size: 1.5vh;
 }
@@ -121,4 +122,14 @@ button {
 span {
     color: #596D48;
     font-weight: bold;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 5px 5px 5px #E5E7EB;
+}
+
+input:invalid {
+    border-color: red;
 }
