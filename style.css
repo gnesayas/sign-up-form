@@ -3,15 +3,17 @@
     src: url(Norse-Bold.otf);
 }
 
-body {
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
     display: flex;
 }
 
-.image {
+.image-div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -47,7 +49,57 @@ a {
     color: inherit;
 }
 
-.form {
+.form-div {
     height: 100vh;
     width: 65vw;
+    padding-top: 15vh;
+    padding-right: 10vw;
+    padding-left: 3vw;
+    font-family: sans-serif;
+}
+
+.top-message {
+    margin-bottom: 3vh;
+}
+
+.mid-message {
+    margin-bottom: 7vh;
+}
+
+.bot-message {
+    margin-bottom: 2vh;
+}
+
+fieldset {
+    border: none;
+}
+
+.form-row {
+    display: flex;
+    gap: 4vw;
+    margin-bottom: 2vh;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row input {
+    border: 1px solid #D6D9DC;
+    padding: 3px;
+    font-size: 1.5vh;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    padding: 1vh 2.5vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.5vh;
+    font-weight: bold;
+    cursor: pointer;
 }
