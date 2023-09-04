@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
     <title>Sign-Up Form</title>
 </head>
 
@@ -55,12 +56,14 @@
                     <div class='form-row'>
                         <div class="form-item">
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password" size="25" minlength="6">
+                            <input class="pass" type="password" id="password" name="password" size="25" minlength="6">
+                            <div class="error-div"></div>
                         </div>
 
                         <div class="form-item">
                             <label for="confirm_password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm_password" name="confirm_password" size="25">
+                            <input class="confirm" type="password" id="confirm_password" name="confirm_password"
+                                size="25" minlength="6">
                         </div>
                     </div>
                 </fieldset>

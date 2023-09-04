@@ -90,15 +90,21 @@ fieldset {
     flex-direction: column;
 }
 
-.form-row input {
+label {
+    font-size: 1.3vh;
+}
+
+input {
     border: 1px solid #E5E7EB;
     border-radius: 5px;
     padding: 3px;
     font-size: 1.5vh;
 }
 
-label {
-    font-size: 1.3vh;
+.error-div {
+    height: 1vh;
+    color: red;
+    font-size: 1vh;
 }
 
 button {
@@ -131,5 +137,9 @@ input:focus {
 }
 
 input:invalid {
+    border-color: red;
+}
+
+.error {
     border-color: red;
 }
